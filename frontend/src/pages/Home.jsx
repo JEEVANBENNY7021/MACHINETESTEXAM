@@ -20,7 +20,7 @@ const Home = () => {
     };
     const fetchMenuItems = async () => {
         try {
-            const res = await fetch('http://localhost:5001/api/menu'); 
+            const res = await fetch('https://machinetestexam-backend.onrender.com/api/menu'); 
             if (!res.ok) throw new Error('Network response was not ok');
             const data = await res.json();
             setItems(data);
