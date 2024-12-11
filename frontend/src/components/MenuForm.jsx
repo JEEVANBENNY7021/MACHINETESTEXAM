@@ -24,8 +24,8 @@ const MenuForm = ({ fetchMenuItems, selectedItem }) => {
         e.preventDefault();
         const method = selectedItem ? 'PUT' : 'POST';
         const url = selectedItem
-            ? `http://localhost:5001/api/menu/${selectedItem._id}`
-            : 'http://localhost:5001/api/menu';
+            ? `https://machinetestexam-backend.onrender.com/api/menu/${selectedItem._id}`
+            : 'https://machinetestexam-backend.onrender.com/api/menu';
 
         try {
             const res = await fetch(url, {
