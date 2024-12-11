@@ -20,7 +20,7 @@ const MenuList = ({ items, fetchMenuItems, setSelectedItem }) => {
 
         setDeleting((prevState) => ({ ...prevState, [id]: true }));
         try {
-            const response = await fetch(`http://localhost:5001/api/menu/${id}`, { //  full URL
+            const response = await fetch(`https://machinetestexam-backend.onrender.com/api/menu/${id}`, { //  full URL
                 method: 'DELETE',
             });
 
